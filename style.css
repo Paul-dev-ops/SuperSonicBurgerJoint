@@ -1,3 +1,4 @@
- {
-    outline: solid green 1px;
+* {
+    font-family:'Times New Roman', Times, serif;
+    outline: solid rgb(54, 56, 0) 1px;
 }
