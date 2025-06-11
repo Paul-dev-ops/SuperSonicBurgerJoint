@@ -1,11 +1,16 @@
 *{
-    outlin: dotted black 1px;
+    outlin: solid black 1px;
+}
+
+@font-face {
+    font-family: 'Caprasimo-Regular';
+    src: url('/assets/fonts/Caprasimo/Caprasimo-Regular.ttf') format('truetype');
 }
 
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:"Caprasimo-Regular", Arial, Helvetica, sans-serif;
+    src: url(/assets/fonts/Caprasimo/Caprasimo-Regular.ttf);
     margin: 0%;
-    outline: solid rgb(54, 56, 0) 1px;
    
 }
 
@@ -13,12 +18,12 @@ body {
 
 .checkedboard {
     background-color: #fffde5;
-    background-image: url(/img/background/BGCheckedboard.png);
+    background-image: url(/assets/img/background/BGCheckedboard.png);
     background-size: 100%;
     background-size: 80%;
 }
 
-/* Header Section below */
+    /* Header Section below */
 
 .main-header {
   background: #fffde5;
@@ -40,7 +45,7 @@ body {
   color: black;
   text-decoration: none;
   margin: 0 1rem;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .container-logoHead {
@@ -64,8 +69,50 @@ body {
     
 }
 
-/* */
+    /*Hero Content Section below */
 
+.heroSection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.hbg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/img/items/banner\ DB\ Cheeseburger.png);
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    opacity: 0.8;
+    z-index: -1;
+}
+
+
+.htitle, .hdescription{
+    color: #c2e8e8;
+    background-color: black;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.htitle {
+    font-size: 60px;
+}
+
+.hdescription {
+    font-size: 35px;
+}
+
+
+        /* Footer section below */
 footer {
     background-color: #c2e8e8;
     margin: 0%;
